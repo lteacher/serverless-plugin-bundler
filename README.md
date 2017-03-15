@@ -1,0 +1,3 @@
+### Serverless Bundler Plugin
+
+Details soon...
