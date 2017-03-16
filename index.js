@@ -1,2 +1,5 @@
 // Just export the bundler plugin directly
-export default './lib/bundler.js'
+import Bundler from './lib/bundler';
+module.exports = Bundler;
+
+// module.exports = require('./lib/bundler');
