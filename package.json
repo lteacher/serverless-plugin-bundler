@@ -4,11 +4,12 @@
   "description": "A node 4.3 compatible serverless plugin to bundle code using webpack for deploy or local invocations",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "webpack; node_modules/.bin/babel-node test",
+    "test": "webpack; node test",
     "build": "webpack",
     "watch": "webpack -w",
     "clean": "rm -r dist",
-    "start": "webpack; node dist"
+    "start": "webpack; node dist",
+    "prepublish": "npm run build"
   },
   "author": "hugo.armstrong@gmail.com",
   "license": "MIT",
