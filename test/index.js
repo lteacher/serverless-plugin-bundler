@@ -2,4 +2,4 @@
 
 const Bundler = require('../dist');
 
-let bundler = new Bundler();
+// Test... coming soon
