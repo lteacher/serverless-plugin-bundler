@@ -5,6 +5,7 @@
       "polyfill": false,
       "regenerator": true
     }],
-    ["transform-class-properties", { "spec": true }]
+    ["transform-class-properties", { "spec": true }],
+    "transform-export-extensions"
   ]
 }

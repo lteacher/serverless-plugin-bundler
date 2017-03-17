@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - '7'
+  - '6'
+  - '5'
+  - '4'
+sudo: false
+
+before_install:
+  - npm install -g ava
+
+after_success:
+  - npm run coverage
+
+deploy:
+  provider: npm
+  email: "hugo.armstrong@gmail.com"
+  api_key: $api_key
+  on:
+    tags: true
