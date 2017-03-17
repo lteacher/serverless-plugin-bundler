@@ -3,6 +3,7 @@ var path = require('path');
 module.exports = {
   entry: './index.js',
   target: 'node',
+  devtool: 'source-map',
   output: {
     library: '',
     libraryTarget: 'umd',

@@ -1,5 +1,6 @@
-'use strict'
+import test from 'ava';
+import Bundler from '../index';
 
-const Bundler = require('../dist');
-
-// Test... coming soon
+test('bundler class is exported', t => {
+  t.truthy(Bundler);
+});

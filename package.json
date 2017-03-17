@@ -4,22 +4,36 @@
   "description": "A node 4.3 compatible serverless plugin to bundle code using webpack for deploy or local invocations",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "webpack; node test",
     "build": "webpack",
-    "watch": "webpack -w",
     "clean": "rm -r dist",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "prepublish": "npm run build",
     "start": "webpack; node dist",
-    "prepublish": "npm run build"
+    "test": "nyc ava test/**/* !test/mocks/**/*",
+    "watch": "webpack -w"
   },
   "author": "hugo.armstrong@gmail.com",
   "license": "MIT",
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
   "devDependencies": {
+    "ava": "^0.18.2",
     "babel-cli": "^6.24.0",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.0",
     "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.2.1",
+    "babel-preset-env": "^1.2.2",
+    "babel-register": "^6.24.0",
+    "chai": "^3.5.0",
+    "coveralls": "^2.12.0",
+    "nyc": "^10.1.2",
+    "testdouble": "^2.0.2",
+    "testdouble-chai": "^0.5.0",
     "webpack": "^2.2.1"
   },
   "dependencies": {
