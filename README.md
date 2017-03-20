@@ -1,5 +1,7 @@
 ### Serverless Bundler Plugin
 
+_**Note:** This package is unpublished. I was trolled by near identical named packages and now I have found an acceptable package so the world does not need this..._
+
 > _Allows project bundling via webpack for serverless invoke local and deploy_
 
 [![Build Status](https://travis-ci.org/lteacher/serverless-plugin-bundler.svg?branch=master)](https://travis-ci.org/lteacher/serverless-plugin-bundler)

@@ -17,4 +17,4 @@ deploy:
   email: "hugo.armstrong@gmail.com"
   api_key: $api_key
   on:
-    tags: true
+    tags: false
