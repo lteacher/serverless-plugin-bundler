@@ -1,8 +1,9 @@
 {
   "name": "serverless-plugin-bundler",
-  "version": "0.1.0-alpha",
+  "version": "0.1.1-alpha",
   "description": "A node 4.3 compatible serverless plugin to bundle code using webpack for deploy or local invocations",
   "main": "./dist/index.js",
+  "files": "./dist",
   "scripts": {
     "build": "webpack",
     "clean": "rm -r dist",
