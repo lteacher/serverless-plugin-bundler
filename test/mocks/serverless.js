@@ -3,12 +3,22 @@ import _ from 'lodash';
 const serverless = {
   config: {
     servicePath: '/'
+  },
+  service: {
+    custom: {
+      bundler: {},
+      webpack: {}
+    }
   }
 }
 
-const options = { random: 'unused' }
+const options = {
+  functionObj: {
+    handler: 'handler.hello'
+  }
+}
 
-export const getMocks = (serverlessMixin, optionsMixin) => ([
-  _.assign({}, serverless, serverlessMixin),
-  _.assign({}, options, optionsMixin)
+export const getMocks = () => ([
+  _.cloneDeep(serverless),
+  _.cloneDeep(options)
 ]);

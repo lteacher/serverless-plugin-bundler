@@ -4,6 +4,9 @@ module.exports = {
   entry: './index.js',
   target: 'node',
   devtool: 'source-map',
+  externals: {
+    webpack: 'webpack'
+  },
   output: {
     library: '',
     libraryTarget: 'umd',
